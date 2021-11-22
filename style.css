@@ -1,0 +1,115 @@
+/* fixing default styling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ----------------------Custom Styling --------------------*/
+/* hamburger styling */
+.options-cont {
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #fefbf3;
+  position: absolute;
+  top: 2.75rem;
+  left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30%;
+  font-size: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+/* toolbox styling */
+.tools-cont {
+  display: flex;
+  height: 5rem;
+  width: 55vw;
+  background-color: #fefbf3;
+  justify-content: space-around;
+  position: absolute;
+  top: 2rem;
+  left: 22vw;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.tools-cont > * {
+  display: block;
+  width: 4rem;
+}
+
+/* pencil options*/
+.pencil-tool-cont {
+  height: 5rem;
+  width: 7rem;
+  position: absolute;
+  top: 7rem;
+  left: 22vw;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-radius: 3%;
+}
+
+.pencil-width-cont {
+  background-color: #b2b1b9;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pencil-width-cont input {
+  width: 80%;
+}
+
+.pencil-color-cont {
+  height: calc(100% - 2rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pencil-color {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+.black {
+  background-color: black;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+/* eraser options (22rem + (7rem per box) + gap 0.5 rem)*/
+.eraser-tool-cont {
+  height: 2rem;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 7rem;
+  left: 29.5vw;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-radius: 3%;
+}
+
+.eraser-tool-cont input {
+  width: 80%;
+}

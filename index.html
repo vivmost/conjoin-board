@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conjoin-Board</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- hamburger -->
+    <div class="options-cont">
+        <i class="fas fa-bars"></i>
+    </div>
+    <!-- tool-bar -->
+    <div class="tools-cont scale-tools">
+        <img src="icons/pencil.svg" alt="pencil">
+        <img src="icons/eraser.svg" alt="pencil">
+        <img src="icons/download.svg" alt="pencil">
+        <img src="icons/upload.svg" alt="pencil">
+        <img src="icons/sticky.svg" alt="pencil">
+        <img src="icons/undo.svg" alt="pencil">
+        <img src="icons/redo.svg" alt="pencil">
+    </div>
+    <!-- pencil options -->
+    <div class="pencil-tool-cont">
+        <div class="pencil-width-cont">
+            <input type="range" min="1" max="10" value="3">
+        </div>
+        <div class="pencil-color-cont">
+            <div class="black pencil-color"></div>
+            <div class="red pencil-color"></div>
+            <div class="blue pencil-color"></div>
+        </div>
+    </div>
+    <!-- eraser options -->
+    <div class="eraser-tool-cont">
+        <input type="range" min="1" max="10" value="3">
+    </div>
+
+    <script src="./tools.js"></script>
+</body>
+
+</html>
