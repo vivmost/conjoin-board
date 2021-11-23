@@ -16,15 +16,16 @@
     <div class="options-cont">
         <i class="fas fa-bars"></i>
     </div>
+
     <!-- tool-bar -->
     <div class="tools-cont scale-tools">
-        <img src="icons/pencil.svg" alt="pencil">
-        <img src="icons/eraser.svg" alt="pencil">
-        <img src="icons/download.svg" alt="pencil">
-        <img src="icons/upload.svg" alt="pencil">
-        <img src="icons/sticky.svg" alt="pencil">
-        <img src="icons/undo.svg" alt="pencil">
-        <img src="icons/redo.svg" alt="pencil">
+        <img class="pencil" src="icons/pencil.svg" alt="pencil">
+        <img class="eraser" src="icons/eraser.svg" alt="eraser">
+        <img class="download" src="icons/download.svg" alt="download">
+        <img class="upload" src="icons/upload.svg" alt="upload">
+        <img class="sticky" src="icons/sticky.svg" alt="sticky">
+        <img class="undo" src="icons/undo.svg" alt="undo">
+        <img class="redo" src="icons/redo.svg" alt="redo">
     </div>
     <!-- pencil options -->
     <div class="pencil-tool-cont">
@@ -42,7 +43,21 @@
         <input type="range" min="1" max="10" value="3">
     </div>
 
+    <!-- sticky note with template-->
+    <!-- <div class="sticky-cont">
+        <div class="header-cont">
+            <div class="minimize"></div>
+            <div class="remove"></div>
+        </div>
+        <div class="note-cont">
+            <textarea placeholder="Enter here..."></textarea>
+        </div>
+    </div> -->
+
+    <canvas></canvas>
+
     <script src="./tools.js"></script>
+    <script src="./canvas.js"></script>
 </body>
 
 </html>

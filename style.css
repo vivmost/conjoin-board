@@ -40,6 +40,20 @@ body {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
+.scale-tools {
+  animation-name: scale-tools;
+  animation-duration: 1s;
+}
+
+@keyframes scale-tools {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .tools-cont > * {
   display: block;
   width: 4rem;
@@ -55,6 +69,7 @@ body {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   border-radius: 3%;
+  display: none;
 }
 
 .pencil-width-cont {
@@ -95,7 +110,7 @@ body {
   background-color: blue;
 }
 
-/* eraser options (22rem + (7rem per box) + gap 0.5 rem)*/
+/* eraser options (22rem + (7rem per box) + gap 0.5rem)*/
 .eraser-tool-cont {
   height: 2rem;
   width: 7rem;
@@ -108,8 +123,66 @@ body {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   border-radius: 3%;
+  display: none;
 }
 
 .eraser-tool-cont input {
   width: 80%;
+}
+
+/* Sticky Note */
+.sticky-cont {
+  height: 15rem;
+  width: 15rem;
+  position: absolute;
+  top: 15rem;
+  left: 20rem;
+}
+
+.header-cont {
+  background-color: #ffc048;
+  height: 2rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.header-cont > * {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+}
+
+.minimize {
+  background-color: #0be881;
+}
+
+.remove {
+  background-color: #ff4757;
+}
+
+.note-cont {
+  height: calc(100% - 2rem);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  background-color: #ffdd59;
+}
+
+/* Uploaded image Styling */
+img {
+  height: 100%;
+  width: 100%;
 }
